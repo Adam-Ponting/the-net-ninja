@@ -1,23 +1,15 @@
-// template strings
-const title = 'Best reads of 2019';
-const author = 'Mario';
-const likes = 30;
+// type conversion
+// let score = '100';
 
-// concatenation way
+// score = Number(score);
+// console.log(score + 1);
+// console.log(typeof score);
 
-// let result = 'The blog called ' + title + ' by ' + author + ' has ' + likes + ' likes';
-// console.log(result);
+// let result = Number('hello');
+// let result = String(50);
+// let result = Boolean(100);
+// let result = Boolean(0);
+// let result = Boolean('0');
+// let result = Boolean('');
 
-// template string way
-
-// let result = `The blog called ${title} by ${author} has ${likes} likes`;
-// console.log(result);
-
-// creating html templates
-let html = `
-    <h2>${title}</h2>
-    <p>By ${author}</p>
-    <span>This blog has ${likes} likes</span>
-`;
-
-console.log(html);
+// console.log(result, typeof result);
