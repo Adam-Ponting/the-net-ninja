@@ -1,0 +1,23 @@
+{
+  "name": "the-net-ninja",
+  "version": "1.0.0",
+  "description": "tutorials",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adam-Ponting/the-net-ninja.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Adam-Ponting/the-net-ninja/issues"
+  },
+  "homepage": "https://github.com/Adam-Ponting/the-net-ninja#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-plugin-html": "^6.0.2"
+  }
+}
