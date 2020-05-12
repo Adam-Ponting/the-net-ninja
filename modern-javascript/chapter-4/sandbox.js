@@ -1,9 +1,12 @@
-// arguments & parameters
+// return statements
 
-const speak = function (name = 'luigi', time = 'night') {
-  console.log(`good ${time}, ${name}!`);
+// const speak = function (name, time) {
+//   console.log(`good ${time}, ${name}!`);
+// };
+
+const calcArea = function (radius) {
+  return 3.14 * radius ** 2;
 };
 
-speak('mario', 'morning');
-// speak();
-speak('shaun');
+const area = calcArea(5);
+console.log('area is:', area);
