@@ -1,24 +1,13 @@
-// callbacks & forEach
+const ul = document.querySelector('.people');
 
-// const myFunc = (num, callbackFunc) => {
-//   // do something
-//   let value = 1 + num;
-//   callbackFunc(value);
-// };
+const people = ['mario', 'luigi', 'ryu', 'shaun', 'chun-li'];
 
-// myFunc(1, (value) => {
-//   // do something
-//   console.log(value);
-// });
+let html = '';
 
-let people = ['mario', 'luigi', 'ryu', 'shaun', 'chun-li'];
+people.forEach((person) => {
+  // create html template for each person
+  html += `<li style="color: purple">${person}</li>`;
+});
 
-const logPerson = (person, index) => {
-  console.log(`${index} - hello ${person}`);
-};
-
-// people.forEach((person, b, c) => {
-//   console.log(`hello ${person}, ${b}, ${c}`);
-// });
-
-people.forEach(logPerson);
+console.log(html);
+ul.innerHTML = html;
