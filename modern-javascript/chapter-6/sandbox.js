@@ -1,11 +1,14 @@
-// const link = document.querySelector('a');
-// console.log(link);
-// console.log(link.getAttribute('href'));
-// link.setAttribute('href', 'https://www.thenetninja.co.uk');
-// link.textContent = 'The Net Ninja website';
+const title = document.querySelector('h1');
 
-const msg = document.querySelector('p');
+// title.setAttribute('style', 'margin: 50px;');
 
-console.log(msg.getAttribute('class'));
-msg.setAttribute('class', 'success');
-msg.setAttribute('style', 'color: green; font-size: 50px;');
+console.log(title.style);
+console.log(title.style.color);
+
+title.style.margin = '50px';
+console.log(title.style);
+
+title.style.color = 'crimson';
+title.style.fontSize = '60px';
+title.style.margin = '';
+console.log(title.style);
