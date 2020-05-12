@@ -1,23 +1,11 @@
-// const para = document.querySelector('p');
-// console.log(para.innerText);
-// para.innerText = 'ninjas are awesome';
+// const link = document.querySelector('a');
+// console.log(link);
+// console.log(link.getAttribute('href'));
+// link.setAttribute('href', 'https://www.thenetninja.co.uk');
+// link.textContent = 'The Net Ninja website';
 
-// const paras = document.querySelectorAll('p');
+const msg = document.querySelector('p');
 
-// paras.forEach((p) => {
-//   console.log(p.innerText);
-//   p.innerText += ' & new text!';
-// });
-
-const content = document.querySelector('.content');
-
-// console.log(content.innerHTML);
-// content.innerHTML = '<h2>this is a new h2</h2>';
-
-// content.innerHTML += '<h2>this is an h2 added to the content</h2>';
-
-const people = ['mario', 'luigi', 'yoshi'];
-
-people.forEach((person) => {
-  content.innerHTML += `<p>${person}</p>`;
-});
+console.log(msg.getAttribute('class'));
+msg.setAttribute('class', 'success');
+msg.setAttribute('style', 'color: green; font-size: 50px;');
