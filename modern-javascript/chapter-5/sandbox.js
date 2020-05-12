@@ -1,34 +1,20 @@
-// const blogs = [
-//   { title: 'why mac & cheese rules', likes: 30 },
-//   { title: '10 things to make with marmite', likes: 50 },
-// ];
-// console.log(blogs);
-// console.log(blogs[0].title);
+// Math object
 
-let user = {
-  name: 'crystal',
-  age: 30,
-  email: 'crystal@thenetninja.co.uk',
-  location: 'berlin',
-  blogs: [
-    { title: 'why mac & cheese rules', likes: 30 },
-    { title: '10 things to make with marmite', likes: 50 },
-  ],
-  login() {
-    console.log('the user logged in');
-  },
-  logout() {
-    console.log('the user logged out');
-  },
-  logBlogs() {
-    // access the blogs here
-    // console.log(this);
-    console.log('this user has written these blogs:');
-    this.blogs.forEach((blog) => {
-      console.log(`${blog.title} has ${blog.likes} likes`);
-    });
-  },
-};
+// console.log(Math);
+// console.log(Math.PI);
+// console.log(Math.E);
 
-// console.log(this);
-user.logBlogs();
+// const area = 7.5;
+
+// console.log(Math.round(area));
+// console.log(Math.floor(area));
+// console.log(Math.ceil(area));
+// console.log(Math.floor(area));
+// console.log(Math.trunc(area2));
+
+// random numbers
+
+const random = Math.random();
+
+console.log(random);
+console.log(Math.round(random * 100));
