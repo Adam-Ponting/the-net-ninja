@@ -110,7 +110,7 @@ nav ul.social {
   }
   article {
     flex: 0 1 32%;
-    transition: flex 0.5s linear;
+    transition: flex 0.2s linear;
   }
 
   article.stack {
