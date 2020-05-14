@@ -16,24 +16,22 @@ body {
 .flex-container {
   display: flex;
   background: white;
-  flex-wrap: wrap;
+  flex-flow: column wrap;
+  justify-content: flex-end;
+  height: 400px;
 }
 
 .box {
   height: 100px;
-  /* width: 500px; */
-  /* flex-basis: 500px; */
   flex: 0 1 200px;
+  width: 25%;
 }
 .one {
   background: red;
-  /* flex-basis: 100px; */
 }
 .two {
   background: green;
-  /* flex-basis: 200px; */
 }
 .three {
   background: blue;
-  /* flex-basis: 300px; */
 }
