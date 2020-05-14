@@ -20,15 +20,17 @@ body {
 
 .box {
   height: 100px;
-  min-width: 100px;
-  float: left;
+  width: 100px;
 }
 .one {
   background: red;
+  flex-grow: 1;
 }
 .two {
   background: green;
+  flex-grow: 3;
 }
 .three {
   background: blue;
+  flex-grow: 2;
 }
