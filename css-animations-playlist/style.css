@@ -1,5 +1,22 @@
+body {
+  background: lightblue;
+  text-align: center;
+}
 .wrapper {
   width: 100%;
   padding: 20px;
   box-sizing: border-box;
+}
+
+img {
+  /* transform: translateX(200px); move right */
+  /* transform: translateY(200px); move down */
+  /* transform: translate(200px, 200px); move x, and y */
+  /* transform: scaleX(2); expand on x axis */
+  /* transform: scaleY(2); expand on y axis */
+  /* transform: scale(2, 4); expand on x & y */
+  /* transform: rotateX(45deg); turns it like a spit roast */
+  /* transform: rotateY(90deg); turns on a pole */
+  /* transform: rotateZ(45deg); spin it like a placemat */
+  transform: rotateZ(90deg) scale(0.5) translateY(90px);
 }
