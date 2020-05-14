@@ -16,15 +16,15 @@ body {
 .flex-container {
   display: flex;
   background: white;
-  flex-flow: column wrap;
-  justify-content: flex-end;
   height: 400px;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .box {
-  height: 100px;
-  flex: 0 1 200px;
-  width: 25%;
+  width: 100px;
+  flex: 0 1 100px;
 }
 .one {
   background: red;
