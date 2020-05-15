@@ -18,3 +18,5 @@ module.exports = {
   },
   plugins: ['html'],
 };
+/* eslint-env jquery */ // hides $ jquery unknown error
+// https://eslint.org/docs/user-guide/configuring
