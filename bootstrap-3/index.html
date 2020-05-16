@@ -20,43 +20,59 @@
       }
       .thumb {
         background: darkkhaki;
-        height: 100px;
       }
       .thumb:nth-of-type(even) {
         background-color: darksalmon;
+      }
+
+      .thumb:nth-child(odd) {
+        clear: both;
       }
     </style>
   </head>
   <body>
     <div style="max-width: 1200px; margin: 0 auto; padding: 10px;">
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-8 col-sm-6 col-xs-12 content">
-            <h3>Content</h3>
-            <p><strong>Large Screens: </strong>8 columns wide</p>
-            <p><strong>Medium Screens: </strong>6 columns wide</p>
-            <p><strong>Small Screens: </strong>12 columns wide</p>
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-12 sidebar">
-            <h3>Content</h3>
-            <p><strong>Large Screens: </strong>4 columns wide</p>
-            <p><strong>Medium Screens: </strong>6 columns wide</p>
-            <p><strong>Small Screens: </strong>12 columns wide</p>
-          </div>
-        </div>
         <div class="row" style="margin-top: 20px;">
-          <div class="col-xs-6 col-sm-4 col-md-2 col-lg-1 thumb">thumbnail</div>
-          <div class="col-xs-6 col-sm-4 col-md-2 col-lg-1 thumb">thumbnail</div>
-          <div class="col-xs-6 col-sm-4 col-md-2 col-lg-1 thumb">thumbnail</div>
-          <div class="col-xs-6 col-sm-4 col-md-2 col-lg-1 thumb">thumbnail</div>
-          <div class="col-xs-6 col-sm-4 col-md-2 col-lg-1 thumb">thumbnail</div>
-          <div class="col-xs-6 col-sm-4 col-md-2 col-lg-1 thumb">thumbnail</div>
-          <div class="col-xs-6 col-sm-4 col-md-2 col-lg-1 thumb">thumbnail</div>
-          <div class="col-xs-6 col-sm-4 col-md-2 col-lg-1 thumb">thumbnail</div>
-          <div class="col-xs-6 col-sm-4 col-md-2 col-lg-1 thumb">thumbnail</div>
-          <div class="col-xs-6 col-sm-4 col-md-2 col-lg-1 thumb">thumbnail</div>
-          <div class="col-xs-6 col-sm-4 col-md-2 col-lg-1 thumb">thumbnail</div>
-          <div class="col-xs-6 col-sm-4 col-md-2 col-lg-1 thumb">thumbnail</div>
+          <div class="col-xs-12">
+            <h1>Button styles (no classes added)</h1>
+            <a href="#">Anchor tag</a>
+            <button>Button tag</button>
+            <input type="submit" value="Submit" />
+          </div>
+
+          <div class="col-xs-12">
+            <h1>Button classes</h1>
+            <a href="#" class="btn btn-default">Anchor tag</a>
+            <button class="btn btn-default">Button tag</button>
+            <input class="btn btn-default" type="submit" value="Submit" />
+          </div>
+          <div class="col-xs-12">
+            <h1>Contextual Button classes</h1>
+            <a href="#" class="btn btn-default">default</a>
+            <a href="#" class="btn btn-primary">primary</a>
+            <a href="#" class="btn btn-info">info</a>
+            <a href="#" class="btn btn-warning">warning</a>
+            <a href="#" class="btn btn-danger">danger</a>
+            <a href="#" class="btn btn-success">success</a>
+          </div>
+          <div class="col-xs-12">
+            <h1>Button Size classes</h1>
+            <a href="#" class="btn btn-default btn-xs">extra small</a>
+            <a href="#" class="btn btn-default btn-sm">small</a>
+            <a href="#" class="btn btn-default">medium</a>
+            <a href="#" class="btn btn-default btn-lg">large</a>
+          </div>
+          <div class="col-xs-12">
+            <h1>ACtive & Disabled Button classes</h1>
+            <a href="#" class="btn btn-default active">active</a>
+            <a href="#" class="btn btn-default">normal</a>
+            <a href="#" class="btn btn-default disabled">disabled</a>
+            <a href="#" class="btn btn-primary active">active</a>
+            <a href="#" class="btn btn-primary">normal</a>
+            <a href="#" class="btn btn-primary disabled">disabled</a>
+            <button class="btn btn-default" disabled>Button</button>
+          </div>
         </div>
       </div>
     </div>
