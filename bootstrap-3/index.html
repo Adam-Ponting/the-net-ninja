@@ -66,7 +66,34 @@
         </div>
       </div>
     </nav>
-    <div class="jumbotron">
+    <div class="carousel slide" id="mySlider" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#mySlider" data-slide-to="0" class="active"></li>
+        <li data-target="#mySlider" data-slide-to="1"></li>
+        <li data-target="#mySlider" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="images/banner-ninja.jpg" alt="" />
+          <div class="carousel-caption">Yo ninja's, let's kick some coding ass</div>
+        </div>
+        <div class="item">
+          <img src="images/banner-wizard.jpg" alt="" />
+          <div class="carousel-caption">Yo ninja's, let's kick some coding ass</div>
+        </div>
+        <div class="item">
+          <img src="images/banner-coder.jpg" alt="" />
+          <div class="carousel-caption">Yo ninja's, let's kick some coding ass</div>
+        </div>
+      </div>
+      <a href="#mySlider" class="left carousel-control" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span> </a
+      ><a href="#mySlider" class="right carousel-control" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+    </div>
+
+    <!-- <div class="jumbotron">
       <div class="container">
         <h1>Smokey Bacon</h1>
         <p>
@@ -75,7 +102,7 @@
           Aspernatur similique neque, cumque ratione illo a vero?
         </p>
       </div>
-    </div>
+    </div> -->
 
     <div class="container" style="padding-top: 60px;">
       <div class="row"></div>
@@ -216,6 +243,13 @@
         $('.nav li').on('click', function () {
           $('.nav li').removeClass('active');
           $(this).addClass('active');
+        });
+
+        $('.carousel').carousel({
+          interval: 1500,
+          pause: false,
+          wrap: false,
+          keyboard: true,
         });
       });
     </script>
