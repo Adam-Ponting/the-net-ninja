@@ -93,7 +93,13 @@
               </p>
             </div>
             <div class="panel-footer">
-              <a href="#">More info...</a>
+              <a
+                href="#"
+                data-toggle="tooltip"
+                data-placement="top"
+                title="How to be a kick ass ninja like me!"
+                >More info...</a
+              >
             </div>
           </div>
         </div>
@@ -204,10 +210,13 @@
     ></script>
     <script>
       /* eslint-env jquery */
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
 
-      $('.nav li').on('click', function () {
-        $('.nav li').removeClass('active');
-        $(this).addClass('active');
+        $('.nav li').on('click', function () {
+          $('.nav li').removeClass('active');
+          $(this).addClass('active');
+        });
       });
     </script>
   </body>
