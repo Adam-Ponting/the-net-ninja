@@ -35,20 +35,27 @@
       <div class="container">
         <div class="navbar-header">
           <a href="/index.html" class="navbar-brand">AWESOME TRAINING</a>
+          <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myDropdown">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
         </div>
-        <ul class="nav navbar-nav">
-          <li><a href="#">Ninja Training</a></li>
-          <li class="active"><a href="#">Wizard Training</a></li>
-          <li><a href="#">Psychic Training</a></li>
-          <li><a href="#">Coding Training</a></li>
-        </ul>
-        <button
-          class="btn btn-default navbar-btn navbar-right"
-          style="margin-left: 10px; margin-right: 0px;"
-        >
-          Register
-        </button>
-        <button class="btn btn-primary navbar-btn navbar-right">Login</button>
+        <div class="collapse navbar-collapse" id="myDropdown">
+          <ul class="nav navbar-nav">
+            <li><a href="#">Ninja Training</a></li>
+            <li class="active"><a href="#">Wizard Training</a></li>
+            <li><a href="#">Psychic Training</a></li>
+            <li><a href="#">Coding Training</a></li>
+          </ul>
+          <button
+            class="btn btn-default navbar-btn navbar-right"
+            style="margin-left: 10px; margin-right: 0px;"
+          >
+            Register
+          </button>
+          <button class="btn btn-primary navbar-btn navbar-right">Login</button>
+        </div>
       </div>
     </nav>
 
