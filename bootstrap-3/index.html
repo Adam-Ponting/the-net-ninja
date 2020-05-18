@@ -33,33 +33,22 @@
   <body>
     <div style="max-width: 1200px; margin: 0 auto; padding: 10px;">
       <div class="container-fluid">
-        <div class="row" style="margin-top: 20px;">
-          <div class="col-xs-12 col-sm-3">
-            <img src="./images/diehard.jpg" alt="" class="img-responsive img-circle center-block" />
-          </div>
-          <div class="col-xs-12 col-sm-3">
-            <img src="./images/gollum.jpg" alt="" class="img-responsive img-circle center-block" />
-          </div>
-          <div class="col-xs-12 col-sm-3">
-            <img src="./images/matrix.jpg" alt="" class="img-responsive img-rounded center-block" />
-          </div>
-          <div class="col-xs-12 col-sm-3">
-            <img src="./images/terminator.jpg" alt="" class="img-responsive center-block" />
-          </div>
-        </div>
-        <div class="row" style="margin-top: 50px;">
-          <div class="col-xs-12">
-            <span
-              style="width: 40%; padding: 20px; background: pink;"
-              class="visible-md-inline-block"
-              >YAY</span
-            >
-            <span
-              style="width: 40%; padding: 20px; background: pink;"
-              class="visible-md-inline-block"
-              >YAY</span
-            >
-          </div>
+        <div class="dropdown">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            Meats
+            <div class="caret"></div>
+          </button>
+
+          <ul class="dropdown-menu">
+            <li class="dropdown-header">Meaty</li>
+            <li><a href="#">Ham</a></li>
+            <li class="disabled"><a href="#">Sausage</a></li>
+            <li><a href="#">Spicy Chicken</a></li>
+            <li><a href="#">Salami</a></li>
+            <li class="dropdown-header">Veggie</li>
+            <li><a href="#">Quorn</a></li>
+            <li><a href="#">Tofu</a></li>
+          </ul>
         </div>
       </div>
     </div>
