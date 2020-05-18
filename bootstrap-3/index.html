@@ -31,28 +31,109 @@
     </style>
   </head>
   <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="/index.html" class="navbar-brand">AWESOME TRAINING</a>
+          <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myDropdown">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="myDropdown">
+          <ul class="nav navbar-nav">
+            <li><a href="#">Ninja Training</a></li>
+            <li class="active"><a href="#">Wizard Training</a></li>
+            <li><a href="#">Psychic Training</a></li>
+            <li><a href="#">Coding Training</a></li>
+          </ul>
+          <button
+            class="btn btn-default navbar-btn navbar-right"
+            style="margin-left: 10px; margin-right: 0px;"
+          >
+            Register
+          </button>
+          <button class="btn btn-primary navbar-btn navbar-right">Login</button>
+        </div>
+      </div>
+    </nav>
+
     <div style="max-width: 1200px; margin: 0 auto; padding: 10px;">
-      <div class="container-fluid">
-        <div class="row" style="margin-top: 20px;">
-          <div class="col-xs-12 col-sm-3">
-            <img
-              src="./images/diehard.jpg"
-              alt=""
-              class="img-responsive img-circle img-thumbnail center-block"
-            />
-          </div>
-          <div class="col-xs-12 col-sm-3">
-            <img src="./images/gollum.jpg" alt="" class="img-responsive img-circle center-block" />
-          </div>
-          <div class="col-xs-12 col-sm-3">
-            <img src="./images/matrix.jpg" alt="" class="img-responsive img-rounded center-block" />
-          </div>
-          <div class="col-xs-12 col-sm-3">
-            <img
-              src="./images/terminator.jpg"
-              alt=""
-              class="img-responsive img-thumbnail center-block"
-            />
+      <div class="container" style="padding-top: 60px;">
+        <div class="row">
+          <div class="col-xs-12">
+            <h1>Navbars</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, quas consectetur
+              blanditiis rem unde cumque necessitatibus quae eveniet repudiandae, eligendi at earum
+              minus iste optio repellat dolorum a quod laudantium.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, quas consectetur
+              blanditiis rem unde cumque necessitatibus quae eveniet repudiandae, eligendi at earum
+              minus iste optio repellat dolorum a quod laudantium.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, quas consectetur
+              blanditiis rem unde cumque necessitatibus quae eveniet repudiandae, eligendi at earum
+              minus iste optio repellat dolorum a quod laudantium.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, quas consectetur
+              blanditiis rem unde cumque necessitatibus quae eveniet repudiandae, eligendi at earum
+              minus iste optio repellat dolorum a quod laudantium.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, quas consectetur
+              blanditiis rem unde cumque necessitatibus quae eveniet repudiandae, eligendi at earum
+              minus iste optio repellat dolorum a quod laudantium.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, quas consectetur
+              blanditiis rem unde cumque necessitatibus quae eveniet repudiandae, eligendi at earum
+              minus iste optio repellat dolorum a quod laudantium.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, quas consectetur
+              blanditiis rem unde cumque necessitatibus quae eveniet repudiandae, eligendi at earum
+              minus iste optio repellat dolorum a quod laudantium.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, quas consectetur
+              blanditiis rem unde cumque necessitatibus quae eveniet repudiandae, eligendi at earum
+              minus iste optio repellat dolorum a quod laudantium.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, quas consectetur
+              blanditiis rem unde cumque necessitatibus quae eveniet repudiandae, eligendi at earum
+              minus iste optio repellat dolorum a quod laudantium.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, quas consectetur
+              blanditiis rem unde cumque necessitatibus quae eveniet repudiandae, eligendi at earum
+              minus iste optio repellat dolorum a quod laudantium.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, quas consectetur
+              blanditiis rem unde cumque necessitatibus quae eveniet repudiandae, eligendi at earum
+              minus iste optio repellat dolorum a quod laudantium.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, quas consectetur
+              blanditiis rem unde cumque necessitatibus quae eveniet repudiandae, eligendi at earum
+              minus iste optio repellat dolorum a quod laudantium.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, quas consectetur
+              blanditiis rem unde cumque necessitatibus quae eveniet repudiandae, eligendi at earum
+              minus iste optio repellat dolorum a quod laudantium.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, quas consectetur
+              blanditiis rem unde cumque necessitatibus quae eveniet repudiandae, eligendi at earum
+              minus iste optio repellat dolorum a quod laudantium.
+            </p>
           </div>
         </div>
       </div>
@@ -66,5 +147,13 @@
       integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
       crossorigin="anonymous"
     ></script>
+    <script>
+      /* eslint-env jquery */
+
+      $('.nav li').on('click', function () {
+        $('.nav li').removeClass('active');
+        $(this).addClass('active');
+      });
+    </script>
   </body>
 </html>
