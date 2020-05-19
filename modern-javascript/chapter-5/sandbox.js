@@ -1,18 +1,26 @@
-// primitive values
+// object literals
 
-// let scoreOne = 50;
-// let scoreTwo = scoreOne;
-// console.log(`scoreOne: ${scoreOne}`, `scoreTwo: ${scoreTwo}`);
+let user = {
+  name: 'crystal',
+  age: 30,
+  email: 'crystal@thenetninja.co.uk',
+  location: 'berlin',
+  blogs: ['why mac & cheese rules', '10 things to make with marmite'],
+  login() {
+    console.log('the user logged in');
+  },
+  logout() {
+    console.log('the user logged out');
+  },
+  logBlogs() {
+    // console.log(user.blogs);
+    // access the blogs here
+    console.log('this user has written these blogs:');
+    this.blogs.forEach((blog) => {
+      console.log(blog);
+    });
+  },
+};
 
-// scoreOne = 100;
-// console.log(`scoreOne: ${scoreOne}`, `scoreTwo: ${scoreTwo}`);
-
-// // reference values
-
-const userOne = { name: 'ryu', age: 30 };
-const userTwo = userOne;
-console.log(userOne, userTwo);
-
-userOne.name = 'chun-li';
-userOne.age = 40;
-console.log(userOne, userTwo);
+// console.log(this);
+user.logBlogs();
