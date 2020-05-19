@@ -1,13 +1,26 @@
-const ul = document.querySelector('.people');
+// callbacks & forEach
 
-const people = ['mario', 'luigi', 'ryu', 'shaun', 'chun-li'];
+// const myFunc = (callbackFunction) => {
+//   let value = 50;
+//   callbackFunction(value);
+// };
 
-let html = '';
+// myFunc((c) => {
+//   console.log(c);
+// });
 
-people.forEach((person) => {
-  // create html template for each person
-  html += `<li style="color: purple">${person}</li>`;
+// function callbackFunction(v) {
+//   console.log(v);
+// }
+
+let people = ['mario', 'luigi', 'ryu', 'shaun', 'chun-li'];
+
+const logPerson = (person, index) => {
+  console.log(`${index} - hello ${person}`);
+};
+
+people.forEach((person, index) => {
+  console.log(`hello ${person} ${index}`);
 });
 
-console.log(html);
-ul.innerHTML = html;
+people.forEach(logPerson);

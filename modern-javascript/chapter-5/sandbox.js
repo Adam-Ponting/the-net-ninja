@@ -7,12 +7,12 @@
 // scoreOne = 100;
 // console.log(`scoreOne: ${scoreOne}`, `scoreTwo: ${scoreTwo}`);
 
-// // reference values
+// reference values
 
-const userOne = { name: 'ryu', age: 30 };
-const userTwo = userOne;
+let userOne = { name: 'ryu', age: 30 };
+let userTwo = userOne;
 console.log(userOne, userTwo);
 
 userOne.name = 'chun-li';
-userOne.age = 40;
+userOne.age = 50;
 console.log(userOne, userTwo);
