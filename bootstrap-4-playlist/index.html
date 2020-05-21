@@ -113,9 +113,18 @@
         <div class="tab-pane active" id="ninja">
           <h3>The Net Ninja</h3>
           <p>
-            Lorem ninja ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
-            euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+            Lorem ninja
+            <span
+              data-toggle="tooltip"
+              title="this is a tooltip"
+              data-placement="bottom"
+              class="text-info"
+              >ipsum dolor sit</span
+            >
+            amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+            dolore magna aliquam erat volutpat.
           </p>
+
           <p>
             Lorem ninja ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
             euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
@@ -177,5 +186,11 @@
       integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
       crossorigin="anonymous"
     ></script>
+    <script>
+      /* eslint-env jquery */
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
   </body>
 </html>
