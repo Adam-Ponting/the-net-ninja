@@ -1,13 +1,27 @@
-var userOne = {
-    email: 'ryu@ninjas.com',
-    name: 'Ryu',
-    login(){
-        console.log(this.email, 'has logged in');
-    },
-    logout(){
-        console.log(this.email, 'has logged out');
-    }
+const userOne = {
+  email: 'ryu@ninjas.com',
+  name: 'Ryu',
+  login() {
+    console.log(this.email, 'has logged in');
+  },
+  logout() {
+    console.log(this.email, 'has logged out');
+  },
 };
 
+console.log(userOne.email, ', ', userOne.name);
 userOne.login();
 userOne.logout();
+// var userOne = {
+//     email: 'ryu@ninjas.com',
+//     name: 'Ryu',
+//     login(){
+//         console.log(this.email, 'has logged in');
+//     },
+//     logout(){
+//         console.log(this.email, 'has logged out');
+//     }
+// };
+
+// userOne.login();
+// userOne.logout();
