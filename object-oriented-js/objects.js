@@ -9,9 +9,8 @@ const userOne = {
   },
 };
 
-console.log(userOne.email, ', ', userOne.name);
-userOne.login();
-userOne.logout();
+userOne.name = 'Yoshi';
+
 // var userOne = {
 //     email: 'ryu@ninjas.com',
 //     name: 'Ryu',
