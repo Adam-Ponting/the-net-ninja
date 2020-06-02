@@ -40,14 +40,27 @@ User.prototype.logout = function () {
 //     });
 //   }
 // }
+function Admin(...args) {
+  User.apply(this, args);
+  this.role = 'super admin';
+}
+
+Admin.prototype = Object.create(User.prototype);
+Admin.prototype.deleteUser = function (user) {
+  users = users.filter((u) => {
+    return u.email != user.email;
+  });
+};
+
 const userOne = new User('ryu@ninjas.com', 'Ryu');
 const userTwo = new User('mario@ninjas.com', 'Mario');
-// const admin = new Admin('theadmin@admin.com', 'MrAdmin');
+const admin = new Admin('theadmin@admin.com', 'MrAdmin');
 console.log(userOne);
-userTwo.login();
+// userTwo.login();
 // userOne.login().updateScore().updateScore().logout();
 
-// let users = [userOne, userTwo, admin];
+let users = [userOne, userTwo, admin];
 // console.log(users);
 // admin.deleteUser(userOne);
 // console.log(users);
+console.log(admin);
