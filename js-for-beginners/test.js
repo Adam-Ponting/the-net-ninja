@@ -1,7 +1,6 @@
-var myAge = 26;
-
-if (myAge < 18 || myAge > 30 || myAge === 25) {
-  console.log('No chance');
-} else {
-  console.log('Party time!');
+const links = document.querySelectorAll('a');
+// console.log(links);
+// console.log(Array.from(links));
+for (let i = 0; i < links.length; i++) {
+  console.log(links[i]);
 }
