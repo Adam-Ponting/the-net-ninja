@@ -1,10 +1,11 @@
-var youLikeMeat = true;
-var myNum = 10;
+var myAge = 19;
 
-if (myNum > true) {
-  console.log('hi');
-  document.write('Here is the meaty menu...');
+if (myAge > 30) {
+  console.log('You are over 30');
+} else if (myAge > 20) {
+  console.log('You are over 20');
+} else if (myAge > 10) {
+  console.log('You are over 10');
 } else {
-  console.log('not true');
+  console.log('You are not over 10');
 }
-console.log(true + false);
