@@ -1,5 +1,10 @@
-// first alert
-console.log('Hello World');
+var youLikeMeat = true;
+var myNum = 10;
 
-// second alert
-console.log('Hello World');
+if (myNum > true) {
+  console.log('hi');
+  document.write('Here is the meaty menu...');
+} else {
+  console.log('not true');
+}
+console.log(true + false);
