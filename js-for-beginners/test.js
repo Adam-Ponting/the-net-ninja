@@ -1,6 +1,10 @@
-const links = document.querySelectorAll('a');
-// console.log(links);
-// console.log(Array.from(links));
-for (let i = 0; i < links.length; i++) {
-  console.log(links[i]);
+var a = a;
+var b = 5;
+
+if (isNaN(a)) {
+  console.log('Tha is not a number');
+} else {
+  console.log('The meaning of like is ' + a * b);
 }
+
+console.log(a * b);
