@@ -1,15 +1,20 @@
-// var myArray = [];
-// myArray[0] = 25;
-// myArray[1] = 35;
-// myArray[2] = true;
-// myArray[3] = 'hello';
-// myArray[2] = false;
-// console.log(myArray);
+// var myPastDate = new Date(2020, 11, 14, 10, 23, 21);
+// var myFutureDate = new Date(2515, 0, 1, 10, 23, 21);
+// console.log(myPastDate);
+// console.log(myFutureDate);
 
-const myArray2 = [100, 10, 20, 23, 22, 30, 40, 'hi', false, 'false', true];
-// // console.log(myArray2);
-// var myArray3 = new Array(5);
-// console.log(myArray3.length);
-// myArray3.push(1, 2, 3, 4, 5);
-// console.log(myArray3.length);
-console.log(myArray2.sort((a, b) => a - b));
+var birthday = new Date(1985, 0, 15, 11, 15, 25);
+var birthday2 = new Date(1985, 0, 15, 11, 15, 25);
+console.log(birthday);
+console.log(birthday.getMonth());
+console.log(birthday.getFullYear());
+console.log(birthday.getDate());
+console.log(birthday.getDay());
+console.log(birthday.getHours());
+console.log(birthday.getTime());
+
+if (birthday.getTime() == birthday2.getTime()) {
+  console.log('dame day!');
+} else {
+  console.log('not equal');
+}
