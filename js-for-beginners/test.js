@@ -1,19 +1,17 @@
-function setUpEvents() {
-  var content = document.getElementById('content');
-  var button = document.getElementById('show-more');
-  button.onclick = function () {
-    if (content.className == 'open') {
-      content.classList.remove('open');
-      console.log('removing');
-      button.innerText = 'Show more';
-    } else {
-      content.classList.add('open');
-      console.log('adding');
-      button.innerText = 'Show less';
-    }
-  };
-}
+const myColor = document.getElementById('color-changer');
+var colors = ['red', 'blue', 'green', 'pink'];
+var counter = 0;
 
-window.onload = function () {
-  setUpEvents();
+function changeColor() {
+  if (counter >= colors.length) {
+    counter = 0;
+  }
+  myColor.style.backgroundColor = colors[counter];
+  counter++;
+}
+var myTimer = setInterval(changeColor, 1000);
+
+myColor.onclick = function () {
+  clearInterval(myTimer);
+  myColor.innerHTML = '<p>Timer Stopped</p>';
 };

@@ -3,12 +3,9 @@ body {
   width: 20%;
   margin: 0 auto;
 }
-#content {
-  max-height: 100px;
-  overflow: hidden;
-  transition: all 0.5s;
-}
-#content.open {
-  max-height: 1000px;
-  transition: all 0.5s;
+#color-changer {
+  width: 200px;
+  height: 200px;
+  background: #fff;
+  transition: all 0.7s;
 }
