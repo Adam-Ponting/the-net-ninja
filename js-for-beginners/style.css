@@ -1,11 +1,3 @@
 body {
-  background: #eee;
-  width: 20%;
-  margin: 0 auto;
-}
-#color-changer {
-  width: 200px;
-  height: 200px;
-  background: #fff;
-  transition: all 0.7s;
+  background-color: antiquewhite;
 }
