@@ -18,6 +18,6 @@
   "homepage": "https://github.com/Adam-Ponting/the-net-ninja#readme",
   "devDependencies": {
     "eslint": "^6.8.0",
-    "eslint-plugin-html": "^6.0.2"
+    "eslint-plugin-html": "^6.0.3"
   }
 }
