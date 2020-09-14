@@ -19,13 +19,18 @@ addForm.addEventListener('submit', (e) => {
     const spanBookName = document.createElement('span');
     const spanBookDelete = document.createElement('span');
 
+    // add content
     spanBookName.textContent = value;
-    // spanBookName.classList.add('name');
     spanBookDelete.textContent = 'Delete';
-    // spanBookDelete.classList.add('delete');
+
+    // add classes
+    spanBookName.classList.add('name');
+    spanBookDelete.classList.add('delete');
 
     li.appendChild(spanBookName);
     li.appendChild(spanBookDelete);
     list.appendChild(li);
+
+    addForm.querySelector('input[type="text"]').value = '';
 });
 console.log(addForm);
