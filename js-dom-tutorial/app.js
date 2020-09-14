@@ -1,7 +1,8 @@
-const banner = document.querySelector('#page-banner');
-console.log(banner.nodeType);
-console.log(banner.nodeName);
-console.log(banner.hasChildNodes());
+const bookList = document.querySelector('#book-list');
 
-const clonedBanner = banner.cloneNode(true);
-console.log(clonedBanner);
+// console.log(bookList.nextElementSibling);
+console.log(bookList.nextElementSibling);
+console.log(bookList.previousElementSibling);
+console.log(bookList.previousSibling);
+
+bookList.previousElementSibling.querySelector('p').innerHTML += '<br /> Too Cool for everyone else';
