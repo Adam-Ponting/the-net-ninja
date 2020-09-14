@@ -33,4 +33,13 @@ addForm.addEventListener('submit', (e) => {
 
     addForm.querySelector('input[type="text"]').value = '';
 });
-console.log(addForm);
+
+const hideBox = document.querySelector('#add-book #hide');
+
+hideBox.addEventListener('change', (e) => {
+    if (hideBox.checked) {
+        list.style.display = 'none';
+    } else {
+        list.style.display = 'block';
+    }
+});
