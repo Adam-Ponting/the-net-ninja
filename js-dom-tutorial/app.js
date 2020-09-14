@@ -1,7 +1,7 @@
-const wrap = document.querySelector('#book-list li:nth-child(2) .name');
+const banner = document.querySelector('#page-banner');
+console.log(banner.nodeType);
+console.log(banner.nodeName);
+console.log(banner.hasChildNodes());
 
-// console.log(wrap);
-
-var books = document.querySelectorAll('#book-list li .name');
-
-Array.from(books).forEach((el) => console.log(el));
+const clonedBanner = banner.cloneNode(true);
+console.log(clonedBanner);
