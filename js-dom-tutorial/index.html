@@ -12,13 +12,14 @@
                     <!-- This is a comment -->
                     <h1 class="title">Bookorama</h1>
                     <p>Books for Ninjas</p>
-                    <form id="search-books">
+                    <!-- <a href="http://www.thenetninja.co.uk">Click here</a> -->
+                    <form id="search-books" name="search-books">
                         <input type="text" placeholder="Search books..." />
                     </form>
                 </div>
             </header>
             <div id="book-list">
-                <h2 class="title">Books to Read</h2>
+                <h2 class="title">Books <strong>to</strong> Read</h2>
                 <ul>
                     <li>
                         <span class="name">Name of the Wind</span>
@@ -39,9 +40,31 @@
                 </ul>
             </div>
             <form id="add-book">
+                <input type="checkbox" name="" id="hide" />
+                <label for="hide">Hide all books</label>
                 <input type="text" placeholder="Add a book..." />
                 <button>Add</button>
             </form>
+            <div id="tabbed-content">
+                <ul class="tabs">
+                    <li data-target="#about" class="active">About</li>
+                    <li data-target="#contact">Contact</li>
+                </ul>
+                <div class="panel active" id="about">
+                    <p>Content for about tab...</p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id nunc
+                        porta urna ornare rhoncus. Ut convallis ante at.
+                    </p>
+                </div>
+                <div class="panel" id="contact">
+                    <p>Content for contact tab...</p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id nunc
+                        porta urna ornare rhoncus. Ut convallis ante at.
+                    </p>
+                </div>
+            </div>
         </div>
         <script src="app.js"></script>
     </body>
